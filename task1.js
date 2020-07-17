@@ -7,8 +7,10 @@ function collapseOrExpand() {
   let expandedListStatus = expandedList.className;
   if (expandedListStatus === "collapsed") {
     expandedList.className = "expanded";
-  } else {
+    this.style.transform = "rotate(180deg)";
+      } else {
     expandedList.className = "collapsed";
+    this.style.transform = "none";
   }
   return true;
 }

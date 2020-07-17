@@ -69,6 +69,7 @@ section {
 .collapse-expand {
     flex: none;
     width: 40px;
+    text-align: center;
 }
 
 /* Expanded list */
