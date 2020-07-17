@@ -1,0 +1,101 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+main {
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 1024px;
+}
+
+#table-heading {
+    color: gray;
+    text-transform: uppercase;
+}
+
+section {
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+
+/* Short lesson's information */
+/* Collapsed list */
+.list-header {
+    width: 100%;
+    display: flex;
+    padding: 0 16px;
+    align-items: baseline;
+}
+
+.lesson-number {
+    margin-right: 16px;
+    color: blue;
+    white-space: nowrap;
+}
+
+.lesson-heading {
+    width: 100%;
+}
+
+.lesson-heading small {
+    color: blue;
+}
+
+.is-viewed {
+    flex: none;
+    width: 160px;
+    color: green;
+}
+
+.collapse-expand {
+    flex: none;
+    width: 40px;
+}
+
+/* Expanded list */
+.list-caption {
+    display: flex;
+    padding: 16px;
+    border-bottom: 1px solid gray;
+}
+
+.list-caption > small {
+    color: gray;
+}
+
+.theme {
+    width: 100%;
+}
+
+.test {
+    flex: none;
+    width: 120px;
+    color: green;
+}
+
+.status {
+    flex: none;
+    width: 200px;
+    color: green;
+}
+
+.list-item {
+    display: flex;
+    padding: 0 16px;
+    border-bottom: 1px solid gray;
+}
+
+.list-item:last-child {
+    border: none;
+}
