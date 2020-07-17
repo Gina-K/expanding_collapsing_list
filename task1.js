@@ -1,9 +1,10 @@
-let arrows = document.getElementsByClassName("collapse-expand");
+// let arrows = document.getElementsByClassName("collapse-expand");
 let arrow = document.getElementById("lesson1");
 
-arrow.onclick = function  collapse() {
-  console.log(arrow.id);
-  let expandedList = document.getElementById(`${arrow.id}-expanded`);
+arrow.addEventListener("click", function collapse()
+{
+  console.log(this.id);
+  let expandedList = document.getElementById(`${this.id}-expanded`);
   console.log(expandedList.id);
   let expandedListStatus = expandedList.className;
   console.log(expandedListStatus);
@@ -14,3 +15,4 @@ arrow.onclick = function  collapse() {
   }
   return true;
 }
+);
