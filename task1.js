@@ -1,13 +1,10 @@
-// let arrows = document.getElementsByClassName("collapse-expand");
-let arrow = document.getElementById("lesson1");
+const arrows = document.querySelectorAll(".collapse-expand");
 
-arrow.addEventListener("click", function collapse()
-{
-  console.log(this.id);
+arrows.forEach(arrow => arrow.addEventListener("click", collapseOrExpand));
+
+function collapseOrExpand() {
   let expandedList = document.getElementById(`${this.id}-expanded`);
-  console.log(expandedList.id);
   let expandedListStatus = expandedList.className;
-  console.log(expandedListStatus);
   if (expandedListStatus === "collapsed") {
     expandedList.className = "expanded";
   } else {
@@ -15,4 +12,3 @@ arrow.addEventListener("click", function collapse()
   }
   return true;
 }
-);
