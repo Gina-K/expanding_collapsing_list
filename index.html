@@ -2,9 +2,51 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Task1</title>
+  <title>Тестовое задание. Задача 1</title>
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<main>
+  <h2 id="table-heading">Ваши уроки</h2>
+
+  <section>
+    <div class="list-header">
+      <div class="lesson-number">
+        <h3>Урок 1.</h3>
+      </div>
+      <div class="lesson-heading">
+        <p>Вводный</p>
+        <small>4 темы, 3 теста</small>
+      </div>
+      <div class="is-viewed">
+        <small>Просмотрено</small>
+      </div>
+      <div class="collapse-expand" id="lesson1">
+        <span>&#9660</span>
+      </div>
+    </div>
+
+    <div class="expanded" id="lesson1-expanded">
+      <div class="list-caption">
+        <small class="theme">Тема</small>
+        <small class="test">Тест к уроку</small>
+        <small class="status">Статус</small>
+      </div>
+
+      <div class="list-item">
+        <div class="theme">
+          <p>1.1. Общая информация об обучающем цикле</p>
+        </div>
+        <div class="test"></div>
+        <div class="status">
+          <small>Просмотрено</small>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
 
 </body>
 </html>
