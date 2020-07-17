@@ -31,6 +31,14 @@ section {
 
 /* Short lesson's information */
 /* Collapsed list */
+.expanded {
+    display: block;
+}
+
+.collapsed {
+    display: none;
+}
+
 .list-header {
     width: 100%;
     display: flex;
