@@ -71,11 +71,12 @@ small {
 .lesson-heading {
     width: 100%;
     margin-bottom: 24px;
-    font-family: 'Fira Sans', Arial, sans-serif;
-    font-weight: 500;
 }
 
-.lesson-heading p {
+.lesson-heading h2 {
+    font-family: 'Fira Sans', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
     margin-bottom: 0;
 }
 
