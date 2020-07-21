@@ -17,7 +17,7 @@ body {
 
 main {
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 24px;
     max-width: 1024px;
 }
 
@@ -27,9 +27,11 @@ main {
     font-weight: 400;
     text-transform: uppercase;
     color: #868686;
+    margin: 24px 0 16px;
 }
 
 section {
+    margin: 16px 0;
     border: 1px solid lightgray;
     border-radius: 8px;
 }
@@ -53,7 +55,7 @@ small {
 .list-header {
     width: 100%;
     display: flex;
-    padding: 0 16px;
+    padding: 0 22px 0 22px;
     align-items: baseline;
 }
 
@@ -61,13 +63,18 @@ small {
     font-size: 20px;
     color: #278AE2;
     white-space: nowrap;
-    margin-right: 16px;
+    margin: 0 18px 0 0;
 }
 
 .lesson-heading {
+    width: 100%;
+    margin-bottom: 24px;
     font-family: 'Fira Sans', Arial, sans-serif;
     font-weight: 500;
-    width: 100%;
+}
+
+.lesson-heading p {
+    margin-bottom: 0;
 }
 
 .lesson-heading small {
@@ -76,20 +83,20 @@ small {
 
 .is-viewed {
     flex: none;
-    width: 160px;
+    width: 142px;
 }
 
 .collapse-expand {
     flex: none;
-    width: 40px;
-    text-align: center;
+    width: 16px;
+    text-align: right;
     color: #278AE2;
 }
 
 /* Expanded list */
 .list-caption {
     display: flex;
-    padding: 16px;
+    padding: 0 22px 12px 22px;
     border-bottom: 1px solid gray;
 }
 
@@ -104,6 +111,7 @@ small {
 .test {
     flex: none;
     width: 120px;
+    align-self: center;
     color: #5EC5B3;
 }
 
@@ -113,13 +121,14 @@ small {
 
 .status {
     flex: none;
-    width: 200px;
+    width: 116px;
+    align-self: center;
     color: #5EC5B3;
 }
 
 .list-item {
     display: flex;
-    padding: 0 16px;
+    padding: 6px 22px;
     border-bottom: 1px solid gray;
 }
 
