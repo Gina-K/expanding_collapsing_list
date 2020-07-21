@@ -1,10 +1,12 @@
 html {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
+    -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
 
@@ -32,8 +34,8 @@ main {
 
 section {
     margin: 16px 0;
-    /*border: 1px solid lightgray;*/
     border-radius: 2px;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
 }
 
@@ -54,9 +56,13 @@ small {
 }
 
 .list-header {
-    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    width: 100%;
     padding: 0 22px 0 22px;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
     align-items: baseline;
     cursor: pointer;
 }
@@ -85,11 +91,15 @@ small {
 }
 
 .is-viewed {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
     flex: none;
     width: 148px;
 }
 
 .collapse-expand {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
     flex: none;
     width: 10px;
     text-align: center;
@@ -98,6 +108,8 @@ small {
 
 /* Expanded list */
 .list-caption {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 0 22px 12px 22px;
     border-bottom: 1px solid #D1D1D1;
@@ -113,8 +125,12 @@ small {
 }
 
 .test {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
     flex: none;
     width: 120px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
     margin-left: 16px;
     color: #5EC5B3;
@@ -125,13 +141,19 @@ small {
 }
 
 .status {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
     flex: none;
     width: 158px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
     color: #5EC5B3;
 }
 
 .list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 6px 22px;
     border-bottom: 1px solid #F3F3F3;
