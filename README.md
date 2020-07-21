@@ -6,4 +6,4 @@
 - HTML5
 - CSS3
 
-Посмотреть [работающую версию](https://gina-k.github.io/drop_down_list/)
+Посмотреть [работающую версию](https://gina-k.github.io/expanding_collapsing_list/)
