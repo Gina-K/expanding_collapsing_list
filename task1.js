@@ -1,18 +1,19 @@
 'use strict'
 
-const arrows = document.querySelectorAll(".collapse-expand");
+const headers = document.querySelectorAll(".list-header");
 
-arrows.forEach(arrow => arrow.addEventListener("click", collapseOrExpand));
+headers.forEach(arrow => arrow.addEventListener("click", collapseOrExpand));
 
 function collapseOrExpand() {
+  let arrow = this.getElementsByClassName("collapse-expand")[0];
   let expandedList = document.getElementById(`${this.id}-expanded`);
   let expandedListStatus = expandedList.className;
   if (expandedListStatus === "collapsed") {
     expandedList.className = "expanded";
-    this.style.transform = "rotate(180deg)";
+    arrow.style.transform = "rotate(180deg)";
       } else {
     expandedList.className = "collapsed";
-    this.style.transform = "none";
+    arrow.style.transform = "none";
   }
   return true;
 }
