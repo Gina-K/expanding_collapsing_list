@@ -1,3 +1,5 @@
+'use strict'
+
 const arrows = document.querySelectorAll(".collapse-expand");
 
 arrows.forEach(arrow => arrow.addEventListener("click", collapseOrExpand));
