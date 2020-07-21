@@ -32,8 +32,9 @@ main {
 
 section {
     margin: 16px 0;
-    border: 1px solid lightgray;
-    border-radius: 8px;
+    /*border: 1px solid lightgray;*/
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
 }
 
 small {
@@ -97,7 +98,7 @@ small {
 .list-caption {
     display: flex;
     padding: 0 22px 12px 22px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #D1D1D1;
 }
 
 .list-caption small {
@@ -129,7 +130,7 @@ small {
 .list-item {
     display: flex;
     padding: 6px 22px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #F3F3F3;
 }
 
 .list-item:last-child {
